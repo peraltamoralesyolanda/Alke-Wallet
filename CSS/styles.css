@@ -20,12 +20,12 @@ Ya que bootstrap prevalecía se le agrego el !important para que pudiese aplicar
 }
 
 .navbar .nav-link {
-  color: #dcdcdc; !important;
-  font-weight: 500;
+  color: #dcdcdc, !important;
+  font-weight: 500
 }
 
 .navbar .nav-link:hover {
-  color: #C27AFF; !important;
+  color: #C27AFF, !important
 }
 
 .navbar .nav-link.active {
