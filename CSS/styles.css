@@ -1,0 +1,140 @@
+/*CSS de forma universal * este es el selector universal*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*paleta de colores https://htmlcolorcodes.com/es// */
+/*Body prototipo*/
+body {
+    background-color: #E4E4E7;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #3C0366
+}
+
+/*PARA EL NAVBAR
+Ya que bootstrap prevalecía se le agrego el !important para que pudiese aplicar el color deseado de la barra de navegación */
+.navbar {
+  background-color: #2F0D68 !important;
+}
+
+.navbar .nav-link {
+  color: #dcdcdc; !important;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  color: #C27AFF; !important;
+}
+
+.navbar .nav-link.active {
+  color: #f0e6ff;
+}
+
+
+.navbar brand-img {
+    max-height: 70px;
+}
+
+/*Para que el botón de hamburguesa quede visible */
+.navbar-toggler {
+  border-color: #dcdcdc;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/*aun que no me tomó como esperaba quizás sea el padding*/
+.navbar-brand img {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+/*Sí fue el padding, pero aún queda un bordecito*/
+.navbar {
+    padding:0%
+}
+
+
+/*Para que el footer quede al final*/
+footer {
+    background-color: #2F0D68 ;
+    text-align: center;
+    color: #dcdcdc;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+
+/*PARA LOS BOTONES*/
+/* Botones principales */
+.btn {
+  background-color: #6f42c1;
+  color: #f8f5e4;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #59339d;
+}
+
+/* botón cancelar en sendmoney y deposit, en bootstrap coinciden con los botones "secondary"*/
+.btn-secondary {
+  background-color: #adb5bd;
+  color: #212529;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #868e96;
+  color: #ffffff;
+}
+
+
+
+/*AHORA POR ARCHIVO HTML*/
+
+/*login.html*/
+footer {
+  display: flex;
+  justify-content: center; /* centra los link */
+  gap: 15rem;               /* separación entre links */
+  }
+
+footer a {
+  color: #dcdcdc;          
+  text-decoration: none;   /* quita la línea y decoraciones con el none*/
+  font-weight: 500;
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-decoration: underline; /*al arrastrar el mouse*/
+}
+
+
+/*MENÚ*/
+.list-group-item {
+  cursor: pointer; /*la manito*/
+  transition: background-color 0.3s ease, color 0.3s ease; /*cuánto se demora en pasar el mouse en esa transición*/
+}
+
+.list-group-item:hover {
+  background-color: #6f42c1;
+  color: #f8f5e4;
+}
