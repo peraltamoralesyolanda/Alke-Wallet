@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimientos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+
+<body>
+    <!-- barra de navegación de bootstrap-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ALKE WALLET</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Menú principal</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Depósitos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Transferencias</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Movimientos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#" id="logout">Cerrar sesión</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="list-group" id="myList" role="tablist">
+        <a class="list-group-item list-group-item-action active" data-toggle="list" href="#home" role="tab">Home</a>
+        <a class="list-group-item list-group-item-action" data-toggle="list" href="#profile" role="tab">Profile</a>
+        <a class="list-group-item list-group-item-action" data-toggle="list" href="#messages" role="tab">Messages</a>
+        <a class="list-group-item list-group-item-action" data-toggle="list" href="#settings" role="tab">Settings</a>
+    </div>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="home" role="tabpanel">...</div>
+        <div class="tab-pane" id="profile" role="tabpanel">...</div>
+        <div class="tab-pane" id="messages" role="tabpanel">...</div>
+        <div class="tab-pane" id="settings" role="tabpanel">...</div>
+    </div>
+
+    <script>
+    $(function () {
+        $('#myList a:last-child').tab('show')
+    })
+    </script>
+
+
+        <!-- Footer -->
+    <footer class="footer-banco">
+        <p>Alke Wallet, depositamos confianza.</p>
+    </footer>
+    
+</body>

@@ -1,0 +1,13 @@
+# Sistema
+.DS_Store
+Thumbs.db
+
+# VS Code (configuración local)
+.vscode/
+
+# Logs
+*.log
+
+# Temporales
+tmp/
+temp/

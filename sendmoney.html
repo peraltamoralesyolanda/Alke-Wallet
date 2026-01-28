@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transferencias</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">ALKE WALLET</a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Menú principal</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Depósitos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Transferencias</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Movimientos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="logout">Cerrar sesión</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Card + formulario -->
+    <main class="container mt-5">
+        <div class="row justify-content-center">
+            <section class="col-md-6 col-lg-5">
+
+                <div class="card shadow-sm mx-auto" style="max-width: 420px;">
+                    <div class="card-body">
+
+                        <h2 class="card-title mb-4 text-center">Transferir dinero:</h2>
+
+                        <form id="transferForm">
+
+                            <div class="mb-3">
+                                <label class="form-label">Cuenta destino</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    value="11223344555"
+                                    disabled>
+                            </div>
+
+                            <!-- Lista de contactos -->
+                            <label for="exampleDataList" class="form-label">
+                                Seleccionar Contacto
+                            </label>
+
+                            <input
+                                class="form-control"
+                                list="datalistOptions"
+                                id="exampleDataList"
+                                placeholder="¿A quién desea transferir?">
+
+                            <datalist id="datalistOptions">
+                                <option value="Neftalís Reyes RUT: 5.444.333-l"></option>
+                                <option value="Lucila Godoy RUT: 7.888.999-K"></option>
+                                <option value="Vicente García-H RUT: 9.222.111-6"></option>
+                            </datalist>
+
+                            <!-- Agregar contacto -->
+                            <a
+                                href="#"
+                                class="text-primary text-decoration-none"
+                                data-bs-toggle="modal"
+                                data-bs-target="#contactModal">
+                                + Agregar nuevo contacto
+                            </a>
+
+                            <div class="mb-3">
+                                <label for="amount" class="form-label">
+                                    Monto a enviar
+                                </label>
+                                <input
+                                    type="text"
+                                    id="amount"
+                                    class="form-control"
+                                    inputmode="numeric"
+                                    pattern="[0-9]*"
+                                    placeholder="$"
+                                    required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Comentario (opcional)</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="d-flex gap-2">
+                                <button type="submit" class="btn btn-primary w-50">
+                                    Transferir
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary w-50"
+                                    onclick="window.location.href='../menu/menu.html'">
+                                    Cancelar
+                                </button>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Modal Agregar Contacto -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Agregar nuevo contacto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="mb-3">
+                        <label for="contactName" class="form-label">Nombre</label>
+                        <input
+                            type="text"
+                            id="contactName"
+                            class="form-control"
+                            placeholder="Nombre completo"
+                            required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="contactRut" class="form-label">RUT</label>
+                        <input
+                            type="text"
+                            id="contactRut"
+                            class="form-control"
+                            placeholder="12.345.678-9"
+                            required>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                        Cancelar
+                    </button>
+
+                    <button
+                        type="button"
+                        class="btn btn-primary"
+                        onclick="guardarContacto()">
+                        Guardar
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer-banco">
+        <p>Alke Wallet, depositamos confianza.</p>
+    </footer>
+
+
+</body>
+</html>

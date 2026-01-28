@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depósitos</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <!-- barra de navegación de bootstrap -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">ALKE WALLET</a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            Menú principal
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Depósitos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Transferencias</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Movimientos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="logout">
+                            Cerrar sesión
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- card + formulario de depósito -->
+    <main class="container mt-5">
+        <div class="row justify-content-center">
+            <section class="col-md-6 col-lg-5">
+
+                <div class="card shadow-sm mx-auto" style="max-width: 420px;">
+                    <div class="card-body">
+
+                        <h2 class="card-title mb-4 text-center">Depósito</h2>
+
+                        <form id="depositForm">
+
+                            <div class="mb-3">
+                                <label class="form-label">Cuenta destino</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    value="11223344555"
+                                    disabled
+                                >
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="amount" class="form-label">
+                                    Monto a depositar
+                                </label>
+                                <input
+                                    id="amount"
+                                    class="form-control"
+                                    placeholder="$"
+                                    required
+                                >
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">
+                                    Comentario (opcional)
+                                </label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="d-flex gap-2">
+                                <button type="submit" class="btn btn-primary w-50">
+                                    Depositar
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary w-50"
+                                    onclick="window.location.href='../menu/menu.html'">
+                                    Cancelar
+                                </button>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer-banco">
+        <p>Alke Wallet, depositamos confianza.</p>
+    </footer>
+
+</body>
+</html>
