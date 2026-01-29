@@ -20,7 +20,7 @@ Ya que bootstrap prevalecía se le agrego el !important para que pudiese aplicar
 }
 
 .navbar .nav-link {
-  color: #dcdcdc, !important;
+  color: #dcdcdc !important;
   font-weight: 500
 }
 
@@ -33,7 +33,7 @@ Ya que bootstrap prevalecía se le agrego el !important para que pudiese aplicar
 }
 
 
-.navbar brand-img {
+.navbar .brand-img {
     max-height: 70px;
 }
 

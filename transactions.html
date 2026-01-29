@@ -28,49 +28,38 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Menú principal</a>
+                        <a class="nav-link active" aria-current="page" href="menu.html">Menú principal</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Depósitos</a>
+                        <a class="nav-link" href="deposit.html">Depósitos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Transferencias</a>
+                        <a class="nav-link" href="sendmoney.html">Transferencias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Movimientos</a>
+                        <a class="nav-link" href="transactions.html">Movimientos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="logout">Cerrar sesión</a>
+                        <a class="nav-link" href="login.html" id="logout">Cerrar sesión</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="list-group" id="myList" role="tablist">
-        <a class="list-group-item list-group-item-action active" data-toggle="list" href="#home" role="tab">Home</a>
-        <a class="list-group-item list-group-item-action" data-toggle="list" href="#profile" role="tab">Profile</a>
-        <a class="list-group-item list-group-item-action" data-toggle="list" href="#messages" role="tab">Messages</a>
-        <a class="list-group-item list-group-item-action" data-toggle="list" href="#settings" role="tab">Settings</a>
-    </div>
+    <!--aquí falta hacer formulario de movimientos bancarios-->
 
-    <div class="tab-content">
-        <div class="tab-pane active" id="home" role="tabpanel">...</div>
-        <div class="tab-pane" id="profile" role="tabpanel">...</div>
-        <div class="tab-pane" id="messages" role="tabpanel">...</div>
-        <div class="tab-pane" id="settings" role="tabpanel">...</div>
-    </div>
-
-    <script>
-    $(function () {
-        $('#myList a:last-child').tab('show')
-    })
-    </script>
+    <main class="container mt-5">
+        <h2 class="mb-4">Historial de transacciones</h2>
+        <div id="transactionsContainer"></div>
+    </main>
 
 
         <!-- Footer -->
     <footer class="footer-banco">
         <p>Alke Wallet, depositamos confianza.</p>
     </footer>
+
+    <script src="../js/main.js"></script>
     
 </body>

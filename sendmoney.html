@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
+
 </head>
 
 <body>
@@ -36,23 +37,23 @@
                 <ul class="navbar-nav ms-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Menú principal</a>
+                        <a class="nav-link active" aria-current="page" href="menu.html">Menú principal</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Depósitos</a>
+                        <a class="nav-link" href="deposit.html">Depósitos</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Transferencias</a>
+                        <a class="nav-link" href="sendmoney.html">Transferencias</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Movimientos</a>
+                        <a class="nav-link" href="transactions.html">Movimientos</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="logout">Cerrar sesión</a>
+                        <a class="nav-link" href="login.html" id="logout">Cerrar sesión</a>
                     </li>
 
                 </ul>
@@ -79,7 +80,7 @@
                                     type="text"
                                     class="form-control"
                                     value="11223344555"
-                                    disabled>
+                                    readonly>
                             </div>
 
                             <!-- Lista de contactos -->
@@ -135,7 +136,7 @@
                                 <button
                                     type="button"
                                     class="btn btn-secondary w-50"
-                                    onclick="window.location.href='../menu/menu.html'">
+                                    onclick="window.location.href='menu.html'">
                                     Cancelar
                                 </button>
                             </div>
@@ -212,6 +213,7 @@
         <p>Alke Wallet, depositamos confianza.</p>
     </footer>
 
+    <script src="../js/main.js"></script>
 
 </body>
 </html>
